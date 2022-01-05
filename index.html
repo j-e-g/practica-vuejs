@@ -9,7 +9,16 @@
 </head>
 <body>
   <div id="app">
-    {{ mensaje }}
+    <header>
+      <h1>{{ titulo }}</h1>
+    </header>
+    <section>
+      <p><a v-bind:href="vueLink">{{ vueLink }}</a></p>
+      <button @click="alerta">Clickear Alerta</button>
+      <p><button v-on:click="sumar">Sumar</button>  <button v-on:click="restar">Restar</button> <button v-on:click="reset">Reset</button> </p>
+      <p>Resultado: {{ contador }}</p>
+      
+    </section>
   </div>
   <script src="https://unpkg.com/vue@next"></script>
   <script src="app.js"></script>
