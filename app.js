@@ -3,7 +3,11 @@ const app = Vue.createApp({
     return {
       titulo: "Prueba de VueJS",
       vueLink: "https://vuejs.org/",
-      contador:0
+      contador:0,
+      nombre:"",
+      nro_tarjeta:"",
+      fecha_vencimiento:"",
+      cod_seguridad:""
     };
   },
 

@@ -1,0 +1,10 @@
+.tarjeta {
+  display: inline-grid;
+  grid-template-columns: 50% 50%;
+  gap: 1em;
+}
+.card-container {
+  border: 1px solid #777;
+  border-radius: 1em;
+  background: #7fb7ef;
+}
