@@ -7,7 +7,8 @@ const app = Vue.createApp({
       nombre:"",
       nro_tarjeta:"",
       fecha_vencimiento:"",
-      cod_seguridad:""
+      cod_seguridad:"",
+      lista: ["VueJS", "JS", "HTML", "CSS"]
     };
   },
 

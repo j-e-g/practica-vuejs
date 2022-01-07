@@ -34,7 +34,12 @@
           <p>{{ fecha_vencimiento }}<span>{{ cod_seguridad }}</span></p>
         </div>
       </div>
-    </section>   
+    </section>
+    <section>
+      <ul>
+        <li v-for="l in lista">{{ l }}</li>
+      </ul>
+    </section>
   </div>
   <script src="https://unpkg.com/vue@next"></script>
   <script src="app.js"></script>
