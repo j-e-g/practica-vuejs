@@ -7,4 +7,10 @@
   border: 1px solid #777;
   border-radius: 1em;
   background: #7fb7ef;
+  padding: 1em;
+  min-width: 300px;
+}
+.card-container input {
+  background: #7fb7ef;
+  border: 0;
 }

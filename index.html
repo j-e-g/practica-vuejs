@@ -19,22 +19,22 @@
       <p>Resultado: {{ contador }}</p>
       
     </section>
-    <div class="tarjeta">
-      <div class="card-container">
-        <h2>Tarjeta</h2>
-        <input type="text" placeholder="Nombre como figura en la tarjeta" v-model="nombre">
-        <input type="number" placeholder="Nro de la tarjeta" v-model="nro_tarjeta">
-        <input type="number" placeholder="Fecha de vencimiento" v-model="fecha_vencimiento">
-        <input type="number" placeholder="Codigo de seguridad" v-model="cod_seguridad">
+    <section>
+      <h2>Tarjeta</h2>
+      <div class="tarjeta">
+        <div class="card-container">
+          <p><input type="text" placeholder="Nombre como figura en la tarjeta" v-model="nombre"></p>
+          <p><input type="text" placeholder="Nro de la tarjeta" v-model="nro_tarjeta" maxlength="16"></p>
+          <p><input type="number" placeholder="Fecha de vencimiento" v-model="fecha_vencimiento" maxlength="4">
+          <input type="number" placeholder="Codigo de seguridad" v-model="cod_seguridad" maxlength="3"></p>
+        </div>
+        <div class="card-container">
+          <p>{{ nombre }} -  {{ nombre.length }}</p>
+          <p>{{ nro_tarjeta }}</p>
+          <p>{{ fecha_vencimiento }}<span>{{ cod_seguridad }}</span></p>
+        </div>
       </div>
-      <div class="card-container">
-        {{ nombre }}
-        {{ nro_tarjeta }}
-        {{ fecha_vencimiento }}
-        {{ cod_seguridad }}
-      </div>
-    </div>
-   
+    </section>   
   </div>
   <script src="https://unpkg.com/vue@next"></script>
   <script src="app.js"></script>
